@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "AlteHaas";
-  src: url(AlteHaasGroteskBold.ttf);
+  font-family: "AlteHaas" !important;
+  src: url(assets/css/AlteHaasGroteskBold.ttf);
 }
 
 @keyframes scale {
@@ -67,6 +67,7 @@
 /* Reset default styles */
 body,
 p {
+  font-family: "AlteHaas" !important;
   margin: 0;
   padding: 0;
   background-color: #000dff;
@@ -194,7 +195,7 @@ h4 {
 }
 
 h1 {
-  font-family: AlteHaas;
+  font-family: "AlteHaas";
   font-size: 20px;
   color: #fc4d04;
   position: absolute;
@@ -247,9 +248,6 @@ h5 {
   }
   */
 
-body {
-  font-family: AlteHaas;
-}
 #object1 {
   width: 50px;
   height: 40px;
