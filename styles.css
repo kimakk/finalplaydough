@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AlteHaas";
-  src: url(AlteHaasGroteskBold.ttf);
+  src: url(assets/css/AlteHaasGroteskBold.woff2);
 }
 
 @keyframes scale {
