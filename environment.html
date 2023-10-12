@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AE</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Bonds and Freedom</a></li>
+        <li><a href="position.html">Artist's Position</a></li>
+      </ul>
+    </nav>
+
+    <h3>Artist's Environment</h3>
+    <h4>
+      The student as an artist. In these last years, students had the
+      opportunity to showcast their works for different types of classes. Most
+      projects that will be showcased will be within the KABK walls. But this
+      doesn't make it any less special! The galleries of the school are mainly
+      used for presentation of works, and you have endless opportunities on how
+      you would like to show your project. Going out in The Hague is definitely
+      not something you want to miss out on.
+    </h4>
+    <section id="user-input">
+      <h5>What do you think of your years at the KABK?</h5>
+      <textarea id="user-text" rows="4" cols="50"></textarea><br />
+      <button id="submit-button">Submit</button>
+    </section>
+    <script>
+      document
+        .getElementById("submit-button")
+        .addEventListener("click", function () {
+          const userInput = document.getElementById("user-text").value;
+          // deze waarde doormailen?
+
+          const userInputForm = document.getElementById("user-input");
+          userInputForm.innerHTML = "<h4>Thanks for your feedback!</h4>";
+          // alert("Thank you for your submition!" + userInput);
+        });
+    </script>
+  </body>
+</html>
