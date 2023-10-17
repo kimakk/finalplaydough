@@ -425,11 +425,11 @@ section.content {
   background-color: white;
 }
 .jws-circle {
-  top: -400px;
+  top: -555px;
   left: -120px;
-  width: 45px;
-  height: 45px;
-  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  font-size: 8px;
   position: relative;
   background-color: #2b00ff;
   border: 2px solid #ffffff;
@@ -446,11 +446,11 @@ section.content {
 }
 
 .kim-circle1 {
-  top: -300px;
-  left: 400px;
-  width: 45px;
-  height: 45px;
-  font-size: 15px;
+  top: -810px;
+  left: 650px;
+  width: 30px;
+  height: 30px;
+  font-size: 8px;
   position: relative;
   background-color: #fc4d04;
   border: 2px solid #ffffff;
@@ -743,16 +743,16 @@ section.content {
 
 .downward-line1 {
   position: relative;
-  top: 910px;
+  top: 939px;
   left: 30%;
   width: 0;
-  height: 498px; /* Adjust the height as needed */
+  height: 480px; /* Adjust the height as needed */
   border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
   transform: rotate(43deg); /* Rotate the line 45 degrees */
 }
 .downward-line2 {
   position: relative;
-  top: 480px;
+  top: 525px;
   left: 52%;
   width: 0;
   height: 340px; /* Adjust the height as needed */
@@ -761,7 +761,7 @@ section.content {
 }
 .downward-line3 {
   position: relative;
-  top: 95px;
+  top: 140px;
   left: 1130px;
   width: 10px;
   height: 400px; /* Adjust the height as needed */
