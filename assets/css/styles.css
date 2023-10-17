@@ -371,6 +371,7 @@ section.content {
 }
 
 #content-start {
+  text-align: center;
   font-size: 70px;
   color: #ffffff;
   background-color: #2b00ff;
