@@ -83,12 +83,14 @@ h4 {
   left: 20px;
   text-align: center;
   display: flex;
+  bottom: 30px;
 }
 .button-container1 {
   flex: 1; /* Distribute available space equally among the containers */
   display: flex;
   flex-direction: column;
   align-items: center;
+  bottom: 30px;
 }
 .button-container2 {
   flex: 1; /* Distribute available space equally among the containers */
@@ -266,22 +268,23 @@ h5 {
 }
 /* Navigation bar styles */
 nav {
+  top: 20px;
+  left: 20px;
   display: inline-block;
   line-height: normal;
   position: fixed;
   inset: 0 0 auto;
-  padding: 1rem;
 }
 nav:hover {
   z-index: +1;
 }
 nav ul {
+  padding: 10px;
   display: inline-block;
   line-height: normal;
   background-color: none;
   width: 100%;
   list-style: none;
-
   display: flex;
   gap: 1em;
 }
@@ -347,14 +350,14 @@ section.content {
   /* Content section styles */
 
 #playdough {
+  position: relative;
+  top: -100px;
   width: auto;
   width: 100%;
   /* margin: 1em auto; */
-
-  font-size: clamp(20px, 12.5vw, 200px);
+  font-size: clamp(20px, 15.5vw, 900px);
   color: #fc4d04;
   text-transform: uppercase;
-
   cursor: ew-resize;
 }
 #playdough div {
@@ -373,6 +376,8 @@ section.content {
 }
 
 #content-start {
+  position: relative;
+  top: 30px;
   text-align: center;
   font-size: 70px;
   color: #ffffff;
@@ -637,7 +642,7 @@ section.content {
   overflow: hidden; /* Hide any overflowing text */
 
   left: 100px;
-  top: -100px;
+  top: -200px;
   width: 900px;
   height: 500px;
   text-align: center;
@@ -646,7 +651,7 @@ section.content {
   align-items: center;
   border-radius: 5em;
   position: relative;
-  background-color: #fc4d04;
+  background-color: none;
   font-size: 25px;
   color: white;
   margin: 0 auto; /* Center the circle horizontally */
@@ -802,17 +807,16 @@ section.content {
   color: #333;
 }
 
-.moving-text-container {
+/*.moving-text-container {
   width: 100%;
   overflow: hidden;
-  position: relative; /* Add this line to make 'top' property work */
-  top: 100px; /* Adjust the value to move the text downwards */
-}
+  position: relative; 
+  top: 100px; 
 
 .moving-text {
   white-space: nowrap;
   animation: moveText 15s linear infinite;
-}
+*/
 
 @keyframes moveText {
   0% {
@@ -1003,4 +1007,37 @@ h6 {
   margin: 0.25rem 1rem 0.5rem;
   border: 0;
   outline: 0;
+}
+
+.circle-p {
+  position: relative;
+  top: 650px;
+  left: -670px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #fc4d04;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the circle horizontally */
+  margin-top: 20px; /* Add some top margin to separate it from the text */
+}
+.circle-23 {
+  position: relative;
+  top: 601px;
+  left: -620px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #fc4d04;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the circle horizontally */
+  margin-top: 20px; /* Add some top margin to separate it from the text */
 }
