@@ -743,30 +743,30 @@ section.content {
 
 .downward-line1 {
   position: relative;
-  top: 1000px;
-  left: calc(50% - 250px);
+  top: 910px;
+  left: 30%;
   width: 0;
-  height: 500px; /* Adjust the height as needed */
+  height: 498px; /* Adjust the height as needed */
   border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
-  transform: rotate(45deg); /* Rotate the line 45 degrees */
+  transform: rotate(43deg); /* Rotate the line 45 degrees */
 }
 .downward-line2 {
   position: relative;
-  top: 580px;
+  top: 480px;
   left: 52%;
   width: 0;
-  height: 390px; /* Adjust the height as needed */
+  height: 340px; /* Adjust the height as needed */
   border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
   transform: rotate(0deg); /* Rotate the line 45 degrees */
 }
 .downward-line3 {
   position: relative;
-  top: 116px;
-  left: 1040px;
+  top: 95px;
+  left: 1130px;
   width: 10px;
-  height: 500px; /* Adjust the height as needed */
+  height: 400px; /* Adjust the height as needed */
   border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
-  transform: rotate(-45deg); /* Rotate the line 45 degrees */
+  transform: rotate(-40deg); /* Rotate the line 45 degrees */
 }
 
 /* Pop-up Styles */
