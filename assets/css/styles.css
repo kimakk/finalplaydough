@@ -65,12 +65,11 @@
 }
 
 /* Reset default styles */
-body,
-p {
+body {
   font-family: "AlteHaas", Arial, Helvetica, sans-serif !important;
-  margin: 0;
-  padding: 0;
   background-color: #000dff;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 h3,
