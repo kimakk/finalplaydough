@@ -43,9 +43,28 @@ body {
   margin-bottom: 100px;
 }
 
-h3,
 h4 {
-  pointer-events: none;
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  left: 500px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 90px;
+  color: #fc4d04;
+}
+
+h3 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  left: 500px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 90px;
+  color: #fc4d04;
 }
 .middle {
   color: #ffffff;
@@ -231,36 +250,29 @@ h5 {
 }
 /* Navigation bar styles */
 nav {
-  top: 20px;
-  left: 20px;
   display: inline-block;
-  line-height: normal;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  top: 10px;
+  left: 10px;
   position: fixed;
-  inset: 0 0 auto;
+  z-index: 999; /* Increase z-index to make it appear above other content */
 }
 nav:hover {
   z-index: +1;
 }
 nav ul {
   padding: 10px;
-  display: inline-block;
-  line-height: normal;
-  background-color: none;
-  width: 100%;
+  background-color: none; /* This might be incorrect, use a valid color value */
   list-style: none;
   display: flex;
   gap: 1em;
 }
 
 nav li {
-  display: inline-block;
-  line-height: normal;
   flex: 1;
-  flex-grow: 0;
 }
 nav li.spacer {
-  display: inline-block;
-  line-height: normal;
   flex-grow: 1;
 }
 
@@ -268,17 +280,13 @@ nav a {
   display: inline-block;
   line-height: normal;
   width: clamp(300px, 15vw, 240px);
-
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.1em;
   color: #ffffff;
-
   text-decoration: none;
   text-align: center;
-
   background: #fc4d04;
-
   border-radius: 1em;
 }
 
@@ -832,17 +840,18 @@ h6 {
 
 .type-design {
   position: relative;
-  top: 1000px;
+  width: 90%;
+  top: 3000px;
   left: 0px;
   display: flex;
 }
 
-.type-design > div {
-  position: sticky;
-  top: 0;
-}
-
 .title-y1 {
+  display: inline-block;
+  width: auto;
+  padding: 15px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  border-radius: 5em;
   position: relative;
   left: 200px;
   top: 900px;
@@ -875,152 +884,195 @@ h6 {
 }
 
 .type-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 940px;
   position: relative;
   top: 1800px;
-  left: 500px;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column {
   position: relative;
-  text-align: center;
-  top: -2000px;
-  left: 500px;
-  font-size: 35px;
+  text-align: right;
+  left: 120px;
+  top: -2020px;
+  font-size: 30px;
   color: white;
 }
 
 .typography-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 1050px;
-  left: 500px;
+  top: 1090px;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column2 {
   position: relative;
-  text-align: center;
+  left: 20px;
+  text-align: left;
   width: 56%;
   top: 800px;
-  left: 600px;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
 }
 
 .design-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 1134px;
   position: relative;
-  top: 600px;
-  left: 500px;
+  top: 890px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column3 {
+  text-align: right;
   position: relative;
-  text-align: center;
+  left: 610px;
   width: 56%;
-  top: 700px;
-  left: 600px;
-  font-size: 35px;
+  top: 900px;
+  font-size: 30px;
   color: white;
 }
 
 .image-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 900px;
-  left: 500px;
+  top: 950px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column4 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 900px;
-  left: 600px;
-  font-size: 35px;
+  top: 960px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .imd-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 452px;
   position: relative;
-  top: 1000px;
-  left: 200px;
+  top: 1240px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column5 {
   position: relative;
-  text-align: center;
+  text-align: right;
+  left: 610px;
   width: 56%;
-  top: 1000px;
-  left: 600px;
-  font-size: 35px;
+  top: 1250px;
+  font-size: 30px;
   color: white;
 }
 
 .movingimage-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 1200px;
-  left: 200px;
+  top: 1400px;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column6 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 1400px;
-  left: 600px;
-  font-size: 35px;
+  top: 1410px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .coding-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 1150px;
   position: relative;
-  top: 1600px;
-  left: 500px;
+  top: 1620px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column7 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 1800px;
-  left: 600px;
-  font-size: 35px;
+  top: 1640px;
+  left: 620px;
+  font-size: 30px;
   color: white;
 }
 
 .theory-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 10px;
   position: relative;
-  top: 1900px;
-  left: 500px;
+  top: 1800px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column8 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 2000px;
-  left: 600px;
-  font-size: 35px;
+  top: 1800px;
+  left: 10px;
+  font-size: 30px;
   color: white;
 }
 
 .title-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 10px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  border-radius: 5em;
+  left: 600px;
   position: relative;
-  top: 2200px;
-  left: 300px;
+  top: 2100px;
+  text-align: center;
   font-size: 80px;
   color: white;
 }
@@ -1028,197 +1080,275 @@ h6 {
 .text-column9 {
   position: relative;
   text-align: center;
-  width: 56%;
-  top: 2300px;
+  width: 50%;
+  top: 2200px;
   left: 50px;
   font-size: 35px;
   color: white;
 }
 
-.gd-y2 {
+.gif-3 {
   position: relative;
-  top: 2500px;
-  left: 400px;
+  text-align: center;
+  width: 5px;
+  height: 15px;
+  top: 2250px;
+  left: 800px;
+  font-size: 25px;
+  color: white;
+
+  animation: bounce 2s infinite; /* Apply the animation to your text */
+}
+
+.gd-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 810px;
+  position: relative;
+  top: 2480px;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column10 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 2600px;
-  left: 600px;
-  font-size: 35px;
+  top: 2500px;
+  left: 610px;
+  font-size: 30px;
   color: white;
 }
 
 .coding-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 2800px;
-  left: 500px;
+  top: 2700px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column11 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 3000px;
-  left: 600px;
-  font-size: 35px;
+  top: 2720px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .electives-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 1070px;
   position: relative;
-  top: 3200px;
-  left: 500px;
+  top: 2900px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column12 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 3300px;
-  left: 600px;
-  font-size: 35px;
+  top: 2900px;
+  left: 620px;
+  font-size: 30px;
   color: white;
 }
 
 .typography-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 3500px;
-  left: 500px;
+  top: 3100px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column13 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 3700px;
-  left: 600px;
-  font-size: 35px;
+  top: 3120px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .imd-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 460px;
   position: relative;
-  top: 3800px;
-  left: 250px;
+  top: 3300px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column14 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 3900px;
-  left: 600px;
-  font-size: 35px;
+  top: 3310px;
+  left: 610px;
+  font-size: 30px;
   color: white;
 }
 
 .theory-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 4100px;
-  left: 510px;
+  top: 3500px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column15 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 4200px;
-  left: 600px;
-  font-size: 35px;
+  top: 3510px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .image-y2 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 1170px;
   position: relative;
-  top: 4400px;
-  left: 510px;
+  top: 3700px;
+  text-align: right;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column16 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 4500px;
-  left: 600px;
-  font-size: 35px;
+  top: 3710px;
+  left: 610px;
+  font-size: 30px;
   color: white;
 }
 
 .title-y3 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  left: 250px;
   position: relative;
-  top: 4600px;
-  left: 300px;
+  top: 3900px;
+  text-align: center;
   font-size: 80px;
   color: white;
+}
+
+.gif-4 {
+  position: relative;
+  top: 4220px;
+  left: 1000px;
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  color: white;
+  animation: bounce 2s infinite; /* Apply the animation to your text */
 }
 
 .text-column17 {
   position: relative;
   text-align: center;
   width: 56%;
-  top: 4700px;
-  left: 50px;
+  top: 4000px;
+  left: 70px;
   font-size: 35px;
   color: white;
 }
 
 .electives-y3 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 4900px;
-  left: 500px;
+  text-align: center;
+  top: 4250px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column18 {
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 56%;
-  top: 5000px;
-  left: 560px;
-  font-size: 35px;
+  top: 4260px;
+  left: 20px;
+  font-size: 30px;
   color: white;
 }
 
 .design-y3 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 1140px;
   position: relative;
-  top: 5200px;
-  left: 500px;
+  top: 4400px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
 
 .text-column19 {
   position: relative;
-  text-align: center;
+  text-align: right;
   width: 56%;
-  top: 5300px;
-  left: 560px;
-  font-size: 35px;
+  top: 4410px;
+  left: 610px;
+  font-size: 30px;
   color: white;
 }
 
 .coding-y3 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  border: 1px solid white; /* Optional: Add a border for styling */
+  left: 20px;
   position: relative;
-  top: 5500px;
-  left: 500px;
+  top: 4550px;
+  text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
@@ -1227,9 +1357,10 @@ h6 {
   position: relative;
   text-align: center;
   width: 56%;
-  top: 5600px;
-  left: 560px;
-  font-size: 35px;
+  top: 4570px;
+  left: 20px;
+  text-align: left;
+  font-size: 30px;
   color: white;
 }
 
@@ -1293,10 +1424,12 @@ h6 {
 
 #user-input {
   text-align: center;
+  margin-top: 200px; /* Adjust the value to move it down as desired */
 }
 
 #user-input h5 {
   left: 0;
+  top: 1px;
 }
 #user-input textarea {
   max-width: 100%;
@@ -1340,9 +1473,40 @@ h6 {
 }
 
 .title-bf {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
   position: relative;
   color: white;
   font-size: 40px;
   top: -1400px;
   left: 300px;
+}
+
+.environment-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  position: relative;
+  color: white;
+  font-size: 70px;
+  top: 100px;
+  left: 300px;
+}
+
+.environment-text1 {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  top: 100px;
+  left: 5px;
+}
+
+.user-text {
+  left: 100px;
+  top: 100px;
 }
