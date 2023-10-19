@@ -3,6 +3,18 @@
   src: url(AlteHaasGroteskBold.ttf);
 }
 
+@keyframes font-animation {
+  0% {
+    font-size: 24px;
+  }
+  50% {
+    font-size: 36px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
 @keyframes scale {
   0% {
     transform: scale(1); /* Initial size */
@@ -41,6 +53,7 @@ body {
   background-color: #000dff;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow-x: hidden;
 }
 
 h4 {
@@ -322,11 +335,11 @@ section.content {
 
 #playdough {
   position: relative;
-  top: -100px;
+  top: -70px;
   width: auto;
   width: 100%;
   /* margin: 1em auto; */
-  font-size: clamp(20px, 15.5vw, 900px);
+  font-size: clamp(20px, 10.5vw, 700px);
   color: #fc4d04;
   text-transform: uppercase;
   cursor: ew-resize;
@@ -348,7 +361,7 @@ section.content {
 
 #content-start {
   position: relative;
-  top: 30px;
+  top: 10px;
   text-align: center;
   font-size: 70px;
   color: #ffffff;
@@ -452,8 +465,8 @@ section.content {
 }
 
 .kim-circle2 {
-  z-index: -1;
-  top: -2700px;
+  z-index: +1;
+  top: -2600px;
   left: 200px;
   width: 100px;
   height: 100px;
@@ -523,6 +536,9 @@ section.content {
   margin-top: 20px; /* Add some top margin to separate it from the text */
 }
 .bonds-title {
+  display: inline-block;
+  width: auto;
+  padding: 5px; /* Optional: Add padding as needed */
   position: relative;
   top: 100px;
   left: 100px;
@@ -536,27 +552,29 @@ section.content {
 }
 .circle2 {
   top: -800px;
+  z-index: +1;
   left: 400px;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   position: relative;
   background-color: #2b00ff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
   margin: 0 auto; /* Center the circle horizontally */
   margin-top: 20px; /* Add some top margin to separate it from the text */
   border: 2px solid #ffffff;
 }
 .box1 {
-  top: -900px;
+  top: -880px;
   left: 500px;
-  width: 500px;
-  height: 220px;
-  border-radius: 0.2em;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+
   position: relative;
   color: #ffffff;
   font-size: 25px;
@@ -564,11 +582,12 @@ section.content {
   border: 2px solid #ffffff;
 }
 .box2 {
-  top: -900px;
+  top: -880px;
   left: 100px;
+  padding: 10px;
   width: 900px;
-  height: 250px;
-  border-radius: 0.2em;
+  height: 230px;
+
   position: relative;
   font-size: 25px;
   color: #ffffff;
@@ -576,11 +595,11 @@ section.content {
   border: 2px solid #ffffff;
 }
 .box3 {
-  top: -900px;
+  top: -880px;
+  padding: 10px;
   left: 400px;
   width: 900px;
-  height: 500px;
-  border-radius: 0.2em;
+  height: 430px;
   position: relative;
   font-size: 25px;
   color: #ffffff;
@@ -588,16 +607,41 @@ section.content {
   border: 2px solid #ffffff;
 }
 .box4 {
-  top: -2300px;
+  border: 2px solid #ffffff;
+  top: -2200px;
   left: 100px;
   width: 800px;
-  height: 300px;
-  border-radius: 0.2em;
+  height: 350px;
+  padding: 10px;
   position: relative;
   font-size: 25px;
   color: #ffffff;
   background-color: #fc4d04;
+}
+
+.box5 {
   border: 2px solid #ffffff;
+  top: -1150px;
+  left: 200px;
+  width: 620px;
+  height: 380px;
+  padding: 10px;
+  position: relative;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #fc4d04;
+}
+.box6 {
+  border: 2px solid #ffffff;
+  top: -1050px;
+  left: 500px;
+  width: 720px;
+  height: 380px;
+  padding: 10px;
+  position: relative;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #fc4d04;
 }
 
 .circle3 {
@@ -658,10 +702,10 @@ section.content {
 }
 
 .circle-y2 {
-  top: -200px;
-  left: -10px;
-  width: 200px;
-  height: 200px;
+  top: 200px;
+  left: 100px;
+  width: 400px;
+  height: 400px;
   position: relative;
   background-color: #fc4d04;
   border-radius: 50%;
@@ -884,11 +928,14 @@ h6 {
 }
 
 .type-title {
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 940px;
+  left: 910px;
   position: relative;
   top: 1800px;
   font-size: 80px;
@@ -907,9 +954,12 @@ h6 {
 .typography-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
   position: relative;
   top: 1090px;
   font-size: 80px;
@@ -927,11 +977,15 @@ h6 {
 }
 
 .design-title {
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 1134px;
+  left: 1115px;
   position: relative;
   top: 890px;
   text-align: center;
@@ -950,9 +1004,12 @@ h6 {
 }
 
 .image-title {
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -975,9 +1032,12 @@ h6 {
 .imd-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 452px;
+  left: 428px;
   position: relative;
   top: 1240px;
   text-align: center;
@@ -998,7 +1058,10 @@ h6 {
 .movingimage-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1020,9 +1083,12 @@ h6 {
 .coding-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 1150px;
+  left: 1110px;
   position: relative;
   top: 1620px;
   text-align: center;
@@ -1043,7 +1109,10 @@ h6 {
 .theory-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 10px;
   position: relative;
@@ -1057,7 +1126,7 @@ h6 {
   position: relative;
   text-align: left;
   width: 56%;
-  top: 1800px;
+  top: 1810px;
   left: 10px;
   font-size: 30px;
   color: white;
@@ -1103,9 +1172,12 @@ h6 {
 .gd-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 810px;
+  left: 780px;
   position: relative;
   top: 2480px;
   font-size: 80px;
@@ -1125,7 +1197,10 @@ h6 {
 .coding-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1148,9 +1223,12 @@ h6 {
 .electives-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 1070px;
+  left: 1030px;
   position: relative;
   top: 2900px;
   text-align: center;
@@ -1162,8 +1240,8 @@ h6 {
   position: relative;
   text-align: right;
   width: 56%;
-  top: 2900px;
-  left: 620px;
+  top: 2910px;
+  left: 610px;
   font-size: 30px;
   color: white;
 }
@@ -1171,7 +1249,10 @@ h6 {
 .typography-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1194,9 +1275,12 @@ h6 {
 .imd-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 460px;
+  left: 430px;
   position: relative;
   top: 3300px;
   text-align: center;
@@ -1217,7 +1301,10 @@ h6 {
 .theory-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1240,9 +1327,12 @@ h6 {
 .image-y2 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 1170px;
+  left: 1140px;
   position: relative;
   top: 3700px;
   text-align: right;
@@ -1296,7 +1386,10 @@ h6 {
 .electives-y3 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1320,9 +1413,12 @@ h6 {
 .design-y3 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
-  left: 1140px;
+  left: 1110px;
   position: relative;
   top: 4400px;
   text-align: center;
@@ -1343,7 +1439,10 @@ h6 {
 .coding-y3 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  padding: 20px; /* Optional: Add padding as needed */
   border: 1px solid white; /* Optional: Add a border for styling */
   left: 20px;
   position: relative;
@@ -1422,23 +1521,6 @@ h6 {
   text-align: center; /* Center text */
 }
 
-#user-input {
-  text-align: center;
-  margin-top: 200px; /* Adjust the value to move it down as desired */
-}
-
-#user-input h5 {
-  left: 0;
-  top: 1px;
-}
-#user-input textarea {
-  max-width: 100%;
-  padding: 1rem;
-  margin: 0.25rem 1rem 0.5rem;
-  border: 0;
-  outline: 0;
-}
-
 .circle-p {
   position: relative;
   top: 650px;
@@ -1474,13 +1556,13 @@ h6 {
 
 .title-bf {
   display: inline-block;
-  width: auto;
+  width: 50%;
   padding: 5px; /* Optional: Add padding as needed */
   position: relative;
   color: white;
   font-size: 40px;
-  top: -1400px;
-  left: 300px;
+  top: -1600px;
+  left: 10px;
 }
 
 .environment-title {
@@ -1489,24 +1571,37 @@ h6 {
   padding: 5px; /* Optional: Add padding as needed */
   position: relative;
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   top: 100px;
-  left: 300px;
+  left: 450px;
 }
 
-.environment-text1 {
+.environment-subtitle {
   display: inline-block;
   width: auto;
   padding: 5px; /* Optional: Add padding as needed */
   position: relative;
+  color: white;
+  font-size: 20px;
+  top: 130px;
+  left: 80px;
+}
+
+.environment-text1 {
+  width: 50%;
+  position: relative;
+  top: 140px;
+  left: 360px;
   text-align: center;
   color: white;
   font-size: 30px;
-  top: 100px;
-  left: 5px;
 }
 
-.user-text {
-  left: 100px;
-  top: 100px;
+.environment-question {
+  width: 90%;
+  position: relative;
+  font-size: 12px;
+  top: 175px;
+  left: 960px;
+  color: #fc4d04;
 }
