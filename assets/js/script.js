@@ -19,3 +19,21 @@ popupY1.addEventListener("click", (event) => {
     popupY1.style.display = "none";
   }
 });
+
+const userInput = document.getElementById("user-input");
+const submitButton = document.getElementById("submit-button");
+const submittedMessages = document.getElementById("submitted-messages");
+
+submitButton.addEventListener("click", () => {
+  const userText = userInput.value;
+
+  if (userText.trim() !== "") {
+    const messageElement = document.createElement("div");
+    messageElement.className = "message";
+    messageElement.textContent = userText;
+    submittedMessages.appendChild(messageElement);
+
+    // Clear the input field after submitting
+    userInput.value = "";
+  }
+});
