@@ -381,7 +381,7 @@ section.content {
   animation: scale 3s ease 1s infinite;
 }
 .circle2 {
-  top: -800px;
+  top: -290px;
   z-index: +1;
   left: 400px;
   width: 100px;
