@@ -2,7 +2,6 @@
   font-family: AlteHaas;
   src: url(AlteHaasGroteskBold.ttf);
 }
-
 @keyframes font-animation {
   0% {
     font-size: 24px;
@@ -14,16 +13,15 @@
     font-size: 24px;
   }
 }
-
 @keyframes scale {
   0% {
-    transform: scale(1); /* Initial size */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* Enlarged size */
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1); /* Back to initial size */
+    transform: scale(1);
   }
 }
 @keyframes bounce {
@@ -39,15 +37,13 @@
 }
 .bounce-text1 {
   position: relative;
-  top: 670px;
+  top: 590px;
   left: 10px;
   width: 50%;
   text-align: center;
   font-size: 30px;
   color: white;
 }
-
-/* Reset default styles */
 body {
   font-family: "AlteHaas", Arial, Helvetica, sans-serif !important;
   background-color: #000dff;
@@ -56,29 +52,6 @@ body {
   overflow-x: hidden;
 }
 
-h4 {
-  display: inline-block;
-  width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
-  left: 500px;
-  position: relative;
-  top: 100px;
-  text-align: center;
-  font-size: 90px;
-  color: #fc4d04;
-}
-
-h3 {
-  display: inline-block;
-  width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
-  left: 500px;
-  position: relative;
-  top: 100px;
-  text-align: center;
-  font-size: 90px;
-  color: #fc4d04;
-}
 .middle {
   color: #ffffff;
   position: relative;
@@ -89,25 +62,24 @@ h3 {
   bottom: 30px;
 }
 .button-container1 {
-  flex: 1; /* Distribute available space equally among the containers */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   bottom: 30px;
 }
 .button-container2 {
-  flex: 1; /* Distribute available space equally among the containers */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .button-container3 {
-  flex: 1; /* Distribute available space equally among the containers */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .text-overlay1 {
   position: relative;
   width: 80%;
@@ -144,16 +116,13 @@ h3 {
 .button-container3:hover .text-overlay3 {
   opacity: 1;
 }
-
 .button {
   background-color: #fc4d04;
   border: 3px solid #fc4d04;
   border-radius: 5em;
-
   font-family: AlteHaas;
   font-size: 20px;
   color: white;
-
   padding: 40px 80px;
   min-width: 200px;
   margin: 4px;
@@ -161,34 +130,8 @@ h3 {
   transition: color 0.4s linear;
   position: relative;
 }
-
 .button:hover {
   color: #2b00ff;
-}
-.button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  z-index: -1;
-  transition: transform 0.5s;
-  transform-origin: 0 0;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-.button1:before {
-  transform: scaleX(0);
-}
-.button2::before {
-  transform: scaleX(0);
-}
-.button3::before {
-  transform: scaleX(0);
-}
-.button1:hover::before {
-  transform: scaleX(1);
 }
 .overlay {
   position: relative;
@@ -200,7 +143,6 @@ h3 {
   height: 0;
   transition: 0.5s ease;
 }
-
 h1 {
   font-family: AlteHaas !important;
   font-size: 20px;
@@ -208,10 +150,9 @@ h1 {
   position: absolute;
   left: 10%;
   bottom: 8rem;
-  padding: 0rem 0rem;
-  translate: 0% 0;
+  padding: 0 0;
+  translate: 0 0;
 }
-
 h3 {
   top: 50px;
   left: 300px;
@@ -221,11 +162,10 @@ h3 {
   margin: 3px;
   padding: 10px;
 }
-
 h4 {
   top: 50px;
   text-align: center;
-  left: 0px;
+  left: 0;
   color: #ffffff;
   font-size: 40px;
   position: relative;
@@ -241,12 +181,6 @@ h5 {
   margin: 10px;
   padding: 10px;
 }
-/*
-  html {
-    scroll-behavior: smooth;
-  }
-  */
-
 #object1 {
   width: 50px;
   height: 40px;
@@ -261,34 +195,31 @@ h5 {
   left: 1270px;
   top: 650px;
 }
-/* Navigation bar styles */
 nav {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  padding: 5px;
   top: 10px;
   left: 10px;
   position: fixed;
-  z-index: 999; /* Increase z-index to make it appear above other content */
+  z-index: 999;
 }
 nav:hover {
   z-index: +1;
 }
 nav ul {
   padding: 10px;
-  background-color: none; /* This might be incorrect, use a valid color value */
+  background-color: none;
   list-style: none;
   display: flex;
   gap: 1em;
 }
-
 nav li {
   flex: 1;
 }
 nav li.spacer {
   flex-grow: 1;
 }
-
 nav a {
   display: inline-block;
   line-height: normal;
@@ -302,43 +233,23 @@ nav a {
   background: #fc4d04;
   border-radius: 1em;
 }
-
 section {
   min-height: 100vh;
-
   padding: 5rem 2rem 2rem;
-
   box-sizing: border-box;
 }
-
 section.content {
   width: 100%;
   padding: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*
-  section a.btn-next {
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    padding: 0.25rem 0.5rem;
-    translate: -50% 0;
-  
-    color: #fff;
-    background: #fc4d04;
-  }
-  
-  /* Content section styles */
-
 #playdough {
   position: relative;
   top: -70px;
   width: auto;
   width: 100%;
-  /* margin: 1em auto; */
   font-size: clamp(20px, 10.5vw, 700px);
   color: #fc4d04;
   text-transform: uppercase;
@@ -349,16 +260,13 @@ section.content {
   justify-content: center;
   display: flex;
 }
-
 #playdough span {
   transition: flex-basis 0.4s ease-in-out;
-
   flex-basis: 1%;
 }
 #playdough span:hover {
   flex-basis: 100%;
 }
-
 #content-start {
   position: relative;
   top: 10px;
@@ -367,7 +275,6 @@ section.content {
   color: #ffffff;
   background-color: #2b00ff;
 }
-
 #content-two {
   margin-top: -1500px;
   font-size: 20px;
@@ -380,17 +287,16 @@ section.content {
   color: black;
   background-color: white;
 }
-
 .content-four {
   position: relative;
   left: 400px;
   top: 150px;
   font-size: 90px;
   color: white;
-  width: 60%; /* Adjust the width as needed */
-  height: 200px; /* Set the height equal to the width to make it a square */
-  border: 2px solid #ffffff; /* Add a border around the box */
-  text-align: center; /* Center the text horizontally */
+  width: 60%;
+  height: 200px;
+  border: 2px solid #ffffff;
+  text-align: center;
   padding: 20px;
   border-radius: 8rem;
   transform-origin: center bottom;
@@ -398,7 +304,6 @@ section.content {
   justify-content: center;
   align-items: center;
 }
-
 #content-five {
   font-size: 20px;
   color: #fc4d04;
@@ -406,20 +311,16 @@ section.content {
 }
 #content-six {
   font-size: 20px;
-
   color: #fc4d04;
   background-color: white;
 }
-
 #content-seven {
   font-size: 20px;
-
   color: #fc4d04;
   background-color: white;
 }
 #content-eight {
   font-size: 20px;
-
   color: #fc4d04;
   background-color: white;
 }
@@ -436,14 +337,12 @@ section.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(20deg); /* Rotate the line 45 degrees */
-  transform-origin: center bottom; /* Set the rotation origin to the bottom center */
-
+  transform: rotate(20deg);
+  transform-origin: center bottom;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 .kim-circle1 {
   top: -810px;
   left: 650px;
@@ -457,13 +356,12 @@ section.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(-20deg); /* Rotate the line 45 degrees */
-  transform-origin: center bottom; /* Set the rotation origin to the bottom center */
+  transform: rotate(-20deg);
+  transform-origin: center bottom;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 .kim-circle2 {
   z-index: +1;
   top: -2600px;
@@ -478,13 +376,12 @@ section.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(20deg); /* Rotate the line 45 degrees */
-  transform-origin: center bottom; /* Set the rotation origin to the bottom center */
+  transform: rotate(20deg);
+  transform-origin: center bottom;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 .jws-circle2 {
   top: -100px;
   left: -20px;
@@ -501,12 +398,10 @@ section.content {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 .jws-box {
   top: -160px;
   left: 700px;
@@ -518,7 +413,6 @@ section.content {
   font-size: 20px;
   background-color: #2b00ff;
 }
-
 .circle {
   top: -470px;
   left: 500px;
@@ -532,23 +426,21 @@ section.content {
   align-items: center;
   font-size: 10px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
 .bonds-title {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  padding: 5px;
   position: relative;
   top: 100px;
   left: 100px;
   margin: 100px;
   text-align: center;
   font-size: 90px;
-
   color: white;
-
-  animation: scale 3s ease 1s infinite; /* Name, duration, timing function, delay, iteration count */
+  animation: scale 3s ease 1s infinite;
 }
 .circle2 {
   top: -800px;
@@ -564,8 +456,8 @@ section.content {
   align-items: center;
   font-size: 30px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   border: 2px solid #ffffff;
 }
 .box1 {
@@ -574,7 +466,6 @@ section.content {
   width: 600px;
   height: 200px;
   padding: 10px;
-
   position: relative;
   color: #ffffff;
   font-size: 25px;
@@ -587,7 +478,6 @@ section.content {
   padding: 10px;
   width: 900px;
   height: 230px;
-
   position: relative;
   font-size: 25px;
   color: #ffffff;
@@ -618,10 +508,9 @@ section.content {
   color: #ffffff;
   background-color: #fc4d04;
 }
-
 .box5 {
   border: 2px solid #ffffff;
-  top: -1150px;
+  top: -1100px;
   left: 200px;
   width: 620px;
   height: 380px;
@@ -633,19 +522,18 @@ section.content {
 }
 .box6 {
   border: 2px solid #ffffff;
-  top: -1050px;
-  left: 500px;
-  width: 720px;
-  height: 380px;
+  top: -1100px;
+  left: 300px;
+  width: 1000px;
+  height: 200px;
   padding: 10px;
   position: relative;
-  font-size: 25px;
+  font-size: 35px;
   color: #ffffff;
   background-color: #fc4d04;
 }
-
 .circle3 {
-  top: 0px;
+  top: 0;
   left: 500px;
   width: 200px;
   height: 200px;
@@ -655,17 +543,15 @@ section.content {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transform-origin: center bottom; /* Set the rotation origin to the bottom center */
+  transform-origin: center bottom;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
-  animation: scale 3s ease 1s infinite; /* Name, duration, timing function, delay, iteration count */
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: scale 3s ease 1s infinite;
 }
 .circle4 {
-  overflow: hidden; /* Hide any overflowing text */
-
+  overflow: hidden;
   left: 100px;
   top: -200px;
   width: 900px;
@@ -679,9 +565,8 @@ section.content {
   background-color: none;
   font-size: 25px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
+  margin: 0 auto;
 }
-
 .circle-y1 {
   top: -900px;
   z-index: -1;
@@ -696,11 +581,10 @@ section.content {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   animation: scale 3s ease 1s infinite;
 }
-
 .circle-y2 {
   top: 200px;
   left: 100px;
@@ -714,8 +598,8 @@ section.content {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   animation: scale 3s ease 1s infinite;
 }
 .circle-y3 {
@@ -731,8 +615,8 @@ section.content {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   animation: scale 3s ease 1s infinite;
 }
 .circle-y4 {
@@ -748,8 +632,8 @@ section.content {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   animation: scale 3s ease 1s infinite;
 }
 .circle-y5 {
@@ -766,40 +650,37 @@ section.content {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
   animation: scale 3s ease 1s infinite;
 }
-
 .downward-line1 {
   position: relative;
   top: 939px;
   left: 30%;
   width: 0;
-  height: 480px; /* Adjust the height as needed */
-  border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
-  transform: rotate(43deg); /* Rotate the line 45 degrees */
+  height: 480px;
+  border-left: 1px solid #ffffff;
+  transform: rotate(43deg);
 }
 .downward-line2 {
   position: relative;
   top: 525px;
   left: 52%;
   width: 0;
-  height: 340px; /* Adjust the height as needed */
-  border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
-  transform: rotate(0deg); /* Rotate the line 45 degrees */
+  height: 340px;
+  border-left: 1px solid #ffffff;
+  transform: rotate(0deg);
 }
 .downward-line3 {
   position: relative;
   top: 140px;
   left: 1130px;
   width: 10px;
-  height: 400px; /* Adjust the height as needed */
-  border-left: 1px solid #ffffff; /* 1px width, solid style, black color */
-  transform: rotate(-40deg); /* Rotate the line 45 degrees */
+  height: 400px;
+  border-left: 1px solid #ffffff;
+  transform: rotate(-40deg);
 }
-
-/* Pop-up Styles */
 .popup {
   display: none;
   position: fixed;
@@ -807,10 +688,9 @@ section.content {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000; /* Ensure it appears above other elements */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
-
 .popup-content {
   position: absolute;
   top: 50%;
@@ -819,10 +699,9 @@ section.content {
   background: white;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
-
 .close {
   position: absolute;
   top: 10px;
@@ -831,27 +710,14 @@ section.content {
   cursor: pointer;
   color: #333;
 }
-
-/*.moving-text-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative; 
-  top: 100px; 
-
-.moving-text {
-  white-space: nowrap;
-  animation: moveText 15s linear infinite;
-*/
-
 @keyframes moveText {
   0% {
-    transform: translateX(100%); /* Start off the right side of the container */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%); /* Move to the left side of the container */
+    transform: translateX(-100%);
   }
 }
-
 h6 {
   font-size: 30px;
   color: white;
@@ -859,18 +725,16 @@ h6 {
   padding: 0;
   white-space: nowrap;
 }
-
 .gif-1 {
   position: relative;
   top: 80px;
-  left: 0px;
+  left: 0;
   width: 100px;
   height: 100px;
   font-size: 20px;
   color: white;
-  animation: bounce 2s infinite; /* Apply the animation to your text */
+  animation: bounce 2s infinite;
 }
-
 .gif-2 {
   position: relative;
   top: 600px;
@@ -879,22 +743,20 @@ h6 {
   height: 50px;
   font-size: 23px;
   color: white;
-  animation: bounce 2s infinite; /* Apply the animation to your text */
+  animation: bounce 2s infinite;
 }
-
 .type-design {
   position: relative;
-  width: 90%;
+  width: 60%;
   top: 3000px;
-  left: 0px;
+  left: 430px;
   display: flex;
 }
-
 .title-y1 {
   display: inline-block;
   width: auto;
-  padding: 15px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 15px;
+  border: 1px solid white;
   border-radius: 5em;
   position: relative;
   left: 200px;
@@ -902,7 +764,6 @@ h6 {
   font-size: 90px;
   color: white;
 }
-
 .intro-position {
   position: relative;
   top: 300px;
@@ -914,129 +775,117 @@ h6 {
   font-size: 40px;
   color: white;
 }
-
 .image-column {
   position: relative;
   top: 2000px;
   left: 50px;
 }
-
 .image-column2 {
   position: relative;
   top: 4000px;
   left: 50px;
 }
-
 .type-title {
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
+  padding: 20px;
   display: inline-block;
   width: auto;
-  border: 1px solid white; /* Optional: Add a border for styling */
+  border: 1px solid white;
   left: 910px;
   position: relative;
-  top: 1800px;
+  top: 1750px;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column {
   position: relative;
   text-align: right;
   left: 120px;
-  top: -2020px;
+  top: -2080px;
   font-size: 30px;
   color: white;
 }
-
 .typography-title {
   display: inline-block;
   width: auto;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
-  top: 1090px;
+  top: 990px;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column2 {
   position: relative;
   left: 20px;
   text-align: left;
   width: 56%;
-  top: 800px;
+  top: 1000px;
   font-size: 30px;
   color: white;
 }
-
 .design-title {
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
+  padding: 20px;
   display: inline-block;
   width: auto;
-
-  border: 1px solid white; /* Optional: Add a border for styling */
+  border: 1px solid white;
   left: 1115px;
   position: relative;
-  top: 890px;
+  top: 1000px;
   text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column3 {
   text-align: right;
   position: relative;
   left: 610px;
   width: 56%;
-  top: 900px;
+  top: 1020px;
   font-size: 30px;
   color: white;
 }
-
 .image-title {
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
+  padding: 20px;
   display: inline-block;
   width: auto;
-  border: 1px solid white; /* Optional: Add a border for styling */
+  border: 1px solid white;
   left: 20px;
   position: relative;
-  top: 950px;
+  top: 1100px;
   text-align: center;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column4 {
   position: relative;
   text-align: left;
   width: 56%;
-  top: 960px;
+  top: 1110px;
   left: 20px;
   font-size: 30px;
   color: white;
 }
-
 .imd-title {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 428px;
   position: relative;
   top: 1240px;
@@ -1044,7 +893,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column5 {
   position: relative;
   text-align: right;
@@ -1054,22 +902,20 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .movingimage-title {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   top: 1400px;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column6 {
   position: relative;
   text-align: left;
@@ -1079,15 +925,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .coding-title {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 1110px;
   position: relative;
   top: 1620px;
@@ -1095,7 +940,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column7 {
   position: relative;
   text-align: right;
@@ -1105,15 +949,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .theory-title {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 10px;
   position: relative;
   top: 1800px;
@@ -1121,7 +964,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column8 {
   position: relative;
   text-align: left;
@@ -1131,12 +973,11 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .title-y2 {
   display: inline-block;
   width: auto;
-  padding: 10px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 10px;
+  border: 1px solid white;
   border-radius: 5em;
   left: 600px;
   position: relative;
@@ -1145,7 +986,6 @@ h6 {
   font-size: 80px;
   color: white;
 }
-
 .text-column9 {
   position: relative;
   text-align: center;
@@ -1155,7 +995,6 @@ h6 {
   font-size: 35px;
   color: white;
 }
-
 .gif-3 {
   position: relative;
   text-align: center;
@@ -1165,25 +1004,22 @@ h6 {
   left: 800px;
   font-size: 25px;
   color: white;
-
-  animation: bounce 2s infinite; /* Apply the animation to your text */
+  animation: bounce 2s infinite;
 }
-
 .gd-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 780px;
   position: relative;
   top: 2480px;
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column10 {
   position: relative;
   text-align: right;
@@ -1193,15 +1029,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .coding-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   top: 2700px;
@@ -1209,7 +1044,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column11 {
   position: relative;
   text-align: left;
@@ -1219,15 +1053,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .electives-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 1030px;
   position: relative;
   top: 2900px;
@@ -1235,7 +1068,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column12 {
   position: relative;
   text-align: right;
@@ -1245,15 +1077,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .typography-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   top: 3100px;
@@ -1261,7 +1092,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column13 {
   position: relative;
   text-align: left;
@@ -1271,15 +1101,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .imd-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 430px;
   position: relative;
   top: 3300px;
@@ -1287,7 +1116,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column14 {
   position: relative;
   text-align: right;
@@ -1297,15 +1125,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .theory-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   top: 3500px;
@@ -1313,7 +1140,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column15 {
   position: relative;
   text-align: left;
@@ -1323,15 +1149,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .image-y2 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 1140px;
   position: relative;
   top: 3700px;
@@ -1339,7 +1164,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column16 {
   position: relative;
   text-align: right;
@@ -1349,11 +1173,10 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .title-y3 {
   display: inline-block;
   width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
+  padding: 5px;
   left: 250px;
   position: relative;
   top: 3900px;
@@ -1361,7 +1184,6 @@ h6 {
   font-size: 80px;
   color: white;
 }
-
 .gif-4 {
   position: relative;
   top: 4220px;
@@ -1370,9 +1192,8 @@ h6 {
   height: 100px;
   font-size: 18px;
   color: white;
-  animation: bounce 2s infinite; /* Apply the animation to your text */
+  animation: bounce 2s infinite;
 }
-
 .text-column17 {
   position: relative;
   text-align: center;
@@ -1382,15 +1203,14 @@ h6 {
   font-size: 35px;
   color: white;
 }
-
 .electives-y3 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   text-align: center;
@@ -1399,7 +1219,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column18 {
   position: relative;
   text-align: left;
@@ -1409,15 +1228,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .design-y3 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 1110px;
   position: relative;
   top: 4400px;
@@ -1425,7 +1243,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column19 {
   position: relative;
   text-align: right;
@@ -1435,15 +1252,14 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .coding-y3 {
   display: inline-block;
   width: auto;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px; /* Optional: Add padding as needed */
-  border: 1px solid white; /* Optional: Add a border for styling */
+  padding: 20px;
+  border: 1px solid white;
   left: 20px;
   position: relative;
   top: 4550px;
@@ -1451,7 +1267,6 @@ h6 {
   font-size: 80px;
   color: #fc4d04;
 }
-
 .text-column20 {
   position: relative;
   text-align: center;
@@ -1462,7 +1277,6 @@ h6 {
   font-size: 30px;
   color: white;
 }
-
 .button-y1 {
   position: relative;
   top: 400px;
@@ -1472,10 +1286,11 @@ h6 {
   transform-origin: center bottom;
   border-radius: 0.2em;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   color: #2b00ff;
   background-color: #fc4d04;
+  cursor: pointer;
 }
 .button-y2 {
   position: relative;
@@ -1486,12 +1301,12 @@ h6 {
   transform-origin: center bottom;
   border-radius: 0.2em;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   color: #2b00ff;
   background-color: #fc4d04;
+  cursor: pointer;
 }
-
 .button-y3 {
   position: relative;
   top: 400px;
@@ -1501,26 +1316,22 @@ h6 {
   transform-origin: center bottom;
   border-radius: 0.2em;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   color: #2b00ff;
   background-color: #fc4d04;
+  cursor: pointer;
 }
-
-/* Style for the column container */
 .column-container {
-  display: flex; /* Use Flexbox */
-  justify-content: space-between; /* Distribute space evenly between columns */
+  display: flex;
+  justify-content: space-between;
 }
-
-/* Style for each column */
 .column {
-  flex: 1; /* Make columns equally spaced */
-  padding: 20px; /* Add some padding for spacing */
-  border: 1px solid #ccc; /* Add borders for visualization */
-  text-align: center; /* Center text */
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
 }
-
 .circle-p {
   position: relative;
   top: 650px;
@@ -1534,8 +1345,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
 .circle-23 {
   position: relative;
@@ -1550,58 +1361,69 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Center the circle horizontally */
-  margin-top: 20px; /* Add some top margin to separate it from the text */
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 .title-bf {
   display: inline-block;
   width: 50%;
-  padding: 5px; /* Optional: Add padding as needed */
+  padding: 5px;
   position: relative;
   color: white;
   font-size: 40px;
   top: -1600px;
   left: 10px;
 }
-
-.environment-title {
-  display: inline-block;
-  width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
-  position: relative;
-  color: white;
-  font-size: 50px;
-  top: 100px;
-  left: 450px;
-}
-
-.environment-subtitle {
-  display: inline-block;
-  width: auto;
-  padding: 5px; /* Optional: Add padding as needed */
-  position: relative;
-  color: white;
-  font-size: 20px;
-  top: 130px;
-  left: 80px;
-}
-
-.environment-text1 {
-  width: 50%;
-  position: relative;
-  top: 140px;
-  left: 360px;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
-
 .environment-question {
   width: 90%;
   position: relative;
   font-size: 12px;
-  top: 175px;
-  left: 960px;
-  color: #fc4d04;
+  top: -75px;
+  left: 1005px;
+  color: #fafafa;
+}
+.environment-title {
+  text-align: center;
+  position: relative;
+  top: 54px;
+  left: -230px;
+  font-size: 96px;
+  color: white;
+}
+.environment-text1 {
+  width: 67%;
+  text-align: left;
+  position: relative;
+  top: 65px;
+  left: 20px;
+  font-size: 37px;
+  color: white;
+}
+.image-container {
+  position: relative;
+}
+.image1 {
+  width: 500px;
+  height: 600px;
+  margin-top: -100px;
+  position: absolute;
+  top: -1200px;
+  left: -440px;
+  rotate: calc(10deg);
+}
+.image2 {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: -4100px;
+  left: -340px;
+  rotate: calc(-80deg);
+}
+.image3 {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: -2000px;
+  left: 540px;
+  rotate: calc(-20deg);
 }
