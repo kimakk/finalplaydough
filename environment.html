@@ -16,122 +16,69 @@
         <li><a href="position.html">Artist's Position</a></li>
       </ul>
     </nav>
-
+    <div class="bigcircle"></div>
     <div class="environment-title">Artist's Environment</div>
-    <div class="environment-subtitle">*The student as an artist*</div>
-
     <div class="environment-text1">
       Janwillem Schrofer writes about the artist and his environment, from
-      victim to free spirit. In these last years, students had the opportunity
-      to showcase their works for different types of classes. Most projects that
-      will be showcased will be within the KABK walls. But this doesn't make it
-      any less special! The galleries of the school are mainly used for
-      presentation of works, and you have endless opportunities on how you would
-      like to show your project. Going out in The Hague is definitely not
-      something you want to miss out on.
+      victim to free spirit. During your studies, you will have multiple
+      opportunities to showcase your works to an audience. In your second year,
+      for example, you can choose Design Practice. You will work with real
+      clients, real projects and have the opportunity to see your creation in
+      the real world! I created a project for Filmhuis which is now visible on
+      their Instagram and will later be printed on A3 posters. In the third
+      year, there will be a Roots exhibition. This will be a huge production
+      that relates to your roots and merges Image and Philosophy class. Anything
+      is possible, as Janwillem Schrofer says, as long as you put your mind to
+      it.
     </div>
-
     <div class="environment-question">
       How have you experienced these past three years?
     </div>
-
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style>
-          #message-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-          }
-
-          #user-input {
-            width: 300px;
-            height: 100px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          }
-
-          #submit-button {
-            background-color: #fc4d04;
-            border: 3px solid #fc4d04;
-            border-radius: 5em;
-            font-family: AlteHaas;
-            font-size: 20px;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-          }
-
-          #submitted-messages {
-            position: absolute;
-            font-size: 30px;
-            color: #fc4d04;
-            top: 200px;
-            left: 200px;
-          }
-        </style>
-      </head>
-      <body>
-        <div id="message-container">
-          <textarea
-            id="user-input"
-            placeholder="Type your message..."
-          ></textarea>
-          <button id="submit-button">Submit</button>
-        </div>
-        <div id="submitted-messages">
-          <!-- Submitted messages will appear here -->
-        </div>
-
-        <script>
-          const userInput = document.getElementById("user-input");
-          const submitButton = document.getElementById("submit-button");
-          const submittedMessages =
-            document.getElementById("submitted-messages");
-
-          // Function to load messages from localStorage
-          function loadMessages() {
-            const messages = JSON.parse(localStorage.getItem("messages")) || [];
-            messages.forEach((message) => {
-              const messageElement = document.createElement("div");
-              messageElement.className = "message";
-              messageElement.textContent = message;
-              submittedMessages.appendChild(messageElement);
-            });
-          }
-
-          // Function to save a new message to localStorage
-          function saveMessage(message) {
-            const messages = JSON.parse(localStorage.getItem("messages")) || [];
-            messages.push(message);
-            localStorage.setItem("messages", JSON.stringify(messages));
-          }
-
-          // Load messages when the page loads
-          loadMessages();
-
-          submitButton.addEventListener("click", () => {
-            const userText = userInput.value;
-
-            if (userText.trim() !== "") {
-              const messageElement = document.createElement("div");
-              messageElement.className = "message";
-              messageElement.textContent = userText;
-              submittedMessages.appendChild(messageElement);
-
-              // Save the message to localStorage
-              saveMessage(userText);
-
-              // Clear the input field after submitting
-              userInput.value = "";
-            }
-          });
-        </script>
-      </body>
-    </html>
+    <style>
+      #message-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+      }
+      #user-input {
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      #submit-button {
+        background-color: #fc4d04;
+        border: 3px solid #fc4d04;
+        border-radius: 5em;
+        font-family: AlteHaas;
+        font-size: 20px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      #submitted-messages {
+        text-align: center;
+        width: 30%;
+        z-index: +1;
+        position: absolute;
+        font-size: 15px;
+        color: #fc4d04;
+        top: 20px;
+        left: 970px;
+      }
+    </style>
+    <div id="message-container">
+      <textarea id="user-input" placeholder="Type your message..."></textarea
+      ><button id="submit-button">Submit</button>
+    </div>
+    <div id="submitted-messages"></div>
+    <script>
+      const userInput = document.getElementById("user-input");
+      const submitButton = document.getElementById("submit-button");
+      const submittedMessages = document.getElementById("submitted-messages"); // Function to load messages from localStorage function loadMessages(){ const messages=JSON.parse(localStorage.getItem("messages")) || []; messages.forEach((message)=>{ const messageElement=document.createElement("div"); messageElement.className="message"; messageElement.textContent=message; submittedMessages.appendChild(messageElement);});} // Function to save a new message to localStorage function saveMessage(message){ const messages=JSON.parse(localStorage.getItem("messages")) || []; messages.push(message); localStorage.setItem("messages", JSON.stringify(messages));} // Function to clear messages from the page and localStorage function clearMessages(){ // Clear the content of the submittedMessages container submittedMessages.innerHTML=""; // Clear the messages from localStorage localStorage.removeItem("messages");} // Load messages when the page loads loadMessages(); submitButton.addEventListener("click", ()=>{ const userText=userInput.value; if (userText.trim() !==""){ const messageElement=document.createElement("div"); messageElement.className="message"; messageElement.textContent=userText; submittedMessages.appendChild(messageElement); // Save the message to localStorage saveMessage(userText); // Clear the input field after submitting userInput.value="";}}); // Add a button or event listener to trigger the message clearing const clearButton=document.getElementById("clear-button"); clearButton.addEventListener("click", ()=>{ clearMessages();});
+    </script>
   </body>
 </html>
